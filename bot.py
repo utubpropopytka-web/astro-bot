@@ -79,6 +79,7 @@ async def handle_webapp_data(update: Update, context: ContextTypes.DEFAULT_TYPE)
                 description=f"Персональный разбор для {birth_city}, {birth_date}. Топ городов, карьера, любовь, здоровье.",
                 payload=payload,
                 currency="XTR",
+                provider_token="",
                 prices=[LabeledPrice("Глубокий анализ", STARS_PRICE)],
             )
     except Exception as e:
